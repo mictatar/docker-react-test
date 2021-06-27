@@ -7,4 +7,4 @@ before_install:
   - docker build -t mictat/docker-react-test -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true mictat/docker-react-test npm run test
+  - docker run -e CI=true mictat/docker-react-test npm run test -- --coverage
